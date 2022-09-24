@@ -1,3 +1,5 @@
+@import url("../scss/_fonts.scss");
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ a{
 body{
     height: 100vh;
     width: 100%;
-    font-family: cursive !important;
+    font-family: "Montserrat-regular" ;
 }
 
 .wraper{
@@ -50,7 +52,7 @@ body{
             gap: 0.8rem;
             button{
                 border: none;
-                font-family: cursive;
+                font-family: "Montserrat-regular";
                 font-size: 1.2rem;
                 font-weight: 600;
                 background-color: transparent;
@@ -70,11 +72,13 @@ body{
             text-align: center;
 
             .head-txt{
+                font-family: "Montserrat-regular";
                 margin-bottom: 1rem;
                 font-size: 2.5rem;
             }
 
             .sec-txt{
+                font-family: "Montserrat-regular";
                 line-height: 1.5rem;
                 font-size: 1.6rem;
                 margin-bottom: 2rem;
@@ -82,7 +86,7 @@ body{
             }
 
             .gt-btn{
-                font-family: cursive;
+                font-family: "Montserrat-regular";
                 height: 2.5rem;
                 padding: 0.4rem 1rem;
                 border-radius: 1.2rem;
