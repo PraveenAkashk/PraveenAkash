@@ -197,6 +197,9 @@ body {
     cursor: pointer;
     height: 2rem;
     width: 2rem;
+    background-color: rgb(241, 241, 241);
+    padding: 0.2rem;
+    display: flex;
   }
   .wraper .menu-icon img {
     height: 100%;
