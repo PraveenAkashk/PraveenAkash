@@ -135,7 +135,9 @@ body{
             display: block;
             position: absolute;
             bottom: -1rem;
-            border: 2px solid black;
+            border-bottom: 0.25rem solid black;
+            border-radius: 0.625rem;
+
             width: 8rem;
 
         }
