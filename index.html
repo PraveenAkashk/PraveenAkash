@@ -11,7 +11,10 @@
   </head>
   <body>
     <div class="wraper">
-      <div class="navbar">
+      <button class="menu-icon" >
+        <img src="./img/menuicon.svg" alt="" id="menuicon">
+      </button>
+      <div class="navbar" id="navbar">
         <div class="link">
           <a href="#sectionone" class="home">
             <img src="./img/home.svg" alt="" />
@@ -22,21 +25,27 @@
           <a href="#" class="portfolio">
             <img src="./img/portfolio.svg" alt="" />
           </a>
-          <a href="#" class="email">
+          <a href="#email" class="email">
             <img src="./img/Email.svg" alt="" />
           </a>
+        </div>
+        <div class="sm-link">
+          <a href="#">Home</a>
+          <a href="#">Profile</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </div>
       </div>
 
       <div class="main-content" id="sectionone">
         <div class="main-info">
           <h1 class="head-txt">Praveen Akash K</h1>
-          <div class="sec-txt">Frontend Developer</div>
-          <button class="gt-btn">Get in touch</button>
+          <div class="sec-txt" id="sectxt">Frontend Developer</div>
+          <button class="gt-btn" id="touchbtn">Get in touch</button>
         </div>
       </div>
-      <div class="container">
-        <div class="about-section" id="About">
+      <div class="about-section" id="About">
+        <div class="container">
           <div class="about-hldr">
             <h1 class="txt-head">About</h1>
             <p class="abt-txt">
@@ -45,35 +54,58 @@
               technical and professional skills towards the fulfillment of goal
               of the organization I am working for.
             </p>
-            <h1 class="wrk-des">UI / Frontend developer</h1>
 
             <div class="row"></div>
           </div>
         </div>
-        <div class="contact-section">
-            <h1 class="txt-head">Contact</h1>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4"></div>
-                <div class="col-sm-12 col-md-12 col-lg-8">
-                    <div class="row mb-4">
-                        <div class="col-sm-12 col-md-12 col-lg-6">
-                            <input type="text" placeholder="Your Name" class="form-control name-input">
-                        </div>
-                        <div class="col-sm-12 col-sm-12 col-md-12 col-lg-6"> 
-                            <input type="text" placeholder="Your Email" class="form-control email-input">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" placeholder="Subject" class="form-control sub-imput">
-                        </div>
-                    </div>
+      </div>
+      <div class="contact-section" id="email">
+        <div class="container">
+          <h1 class="txt-head">Contact</h1>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4"></div>
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <div class="row mb-4">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="form-control name-input"
+                  />
                 </div>
+                <div class="col-sm-12 col-sm-12 col-md-12 col-lg-6">
+                  <input
+                    type="text"
+                    placeholder="Your Email"
+                    class="form-control email-input"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form-control sub-imput"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
+    <script>
+      let menubutton = document.getElementById("menuicon");
+      let navbar = document.getElementById("navbar");
+      let touchbutton = document.getElementById("touchbtn");
+      let sectext = document.getElementById("sectxt");
 
+      menubutton.addEventListener("click", () => {
+        navbar.classList.toggle("show");
+      });
+    </script>
+    <link rel="stylesheet" href="./js/script.js" />
     <link rel="stylesheet" href="./js/bootstrap/bootstrap.bundle.js" />
   </body>
 </html>
