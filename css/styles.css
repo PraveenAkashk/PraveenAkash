@@ -1,4 +1,5 @@
 @import url("../scss/_fonts.scss");
+@import url("../scss/_mixins.scss");
 * {
   margin: 0;
   padding: 0;
@@ -10,65 +11,76 @@ a {
   text-decoration: none;
 }
 
+input.form-control:focus {
+  box-shadow: none;
+}
+
 body {
   height: 100vh;
   width: 100%;
   font-family: "Montserrat-regular";
+  position: relative;
 }
 
 .wraper {
   height: 100%;
   width: 100%;
+}
+.wraper::before {
+  content: "";
   background: url("../img/bg-img.jpg");
   background-size: cover;
-}
-.wraper .navbar {
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  height: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  padding: 0 2rem;
-}
-.wraper .navbar .brand {
-  height: 4rem;
-  width: 10rem;
-}
-.wraper .navbar .brand img {
   height: 100%;
   width: 100%;
 }
+.wraper .navbar {
+  position: fixed;
+  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+}
 .wraper .navbar .link {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+  gap: 2rem;
 }
-.wraper .navbar .link button {
+.wraper .navbar .link a {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   border: none;
-  font-family: "Montserrat-regular";
-  font-size: 1.2rem;
-  font-weight: 600;
-  background-color: transparent;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.8rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.wraper .navbar .link a img {
+  height: 100%;
+  width: 100%;
 }
 .wraper .main-content {
-  height: 100%;
+  height: 100vh;
   background-color: rgba(182, 142, 142, 0);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 5rem;
+  position: relative;
 }
 .wraper .main-content .main-info {
   text-align: center;
 }
 .wraper .main-content .main-info .head-txt {
   font-family: "Montserrat-regular";
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .wraper .main-content .main-info .sec-txt {
   font-family: "Montserrat-regular";
@@ -94,9 +106,70 @@ body {
   color: white;
   transition: 0.5s all;
 }
+.wraper .txt-head {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.wraper .txt-head::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1rem;
+  border: 2px solid black;
+  width: 8rem;
+}
+.wraper .about-section .about-hldr {
+  padding-top: 4rem;
+}
+.wraper .about-section .about-hldr .abt-txt {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.wraper .about-section .about-hldr .wrk-des {
+  text-align: center;
+  text-transform: uppercase;
+}
+.wraper .contact-section input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid gray;
+}
+.wraper .contact-section .sub-imput {
+  height: 10rem;
+  overflow-y: auto;
+  position: relative;
+}
+.wraper .contact-section .sub-imput::-moz-placeholder {
+  position: absolute;
+  top: 0.5rem;
+}
+.wraper .contact-section .sub-imput:-ms-input-placeholder {
+  position: absolute;
+  top: 0.5rem;
+}
+.wraper .contact-section .sub-imput::placeholder {
+  position: absolute;
+  top: 0.5rem;
+}
 
 @media screen and (max-width: 767px) {
-  .wraper .navbar .link {
+  .wraper .contact-section input.name-input {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .wraper .contact-section input.name-input {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .wraper .navbar {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

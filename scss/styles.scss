@@ -1,4 +1,5 @@
 @import url("../scss/_fonts.scss");
+@import url("../scss/_mixins.scss");
 
 *{
     margin: 0;
@@ -12,60 +13,75 @@ a{
 
 }
 
+input.form-control{
+    &:focus{
+        box-shadow: none;
+    }
+}
+
 body{
     height: 100vh;
     width: 100%;
     font-family: "Montserrat-regular" ;
+    position: relative;
+    
 }
 
 .wraper{
     height: 100%;
     width: 100%;
-    background: url("../img/bg-img.jpg");
-    background-size: cover;
+   
 
-    .navbar{
-        position: sticky;
+    &::before{
+        content: "";
+        background: url("../img/bg-img.jpg");
+        background-size: cover;
+        position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        height: 4rem;
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
+        height: 100%;
+        width: 100%;
+    }
+  
+
+    .navbar{
+        position: fixed;
         padding: 0 2rem;
-
-        .brand{
-            height: 4rem;
-            width: 10rem;
-
-            img{
-                height: 100%;
-                width: 100%;
-            }
-        }
+        height: 100vh;
+        display: flex;
 
         .link{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 0.8rem;
-            button{
+            gap: 2rem;
+            a{
+                display: flex;
+                justify-content: center;
+                align-self: center;
                 border: none;
-                font-family: "Montserrat-regular";
-                font-size: 1.2rem;
-                font-weight: 600;
-                background-color: transparent;
+                height: 3rem;
+                width: 3rem;
+                padding: 0.8rem;
+                background-color: white;
+                border-radius: 50%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
     }
 
     .main-content{
-        height: 100%;
+        height: 100vh;
         background-color: rgba(182, 142, 142, 0);
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 5rem;
+        position: relative;
         
 
         .main-info{
@@ -73,8 +89,9 @@ body{
 
             .head-txt{
                 font-family: "Montserrat-regular";
-                margin-bottom: 1rem;
-                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+                font-size: 3rem;
+                text-transform: uppercase;
             }
 
             .sec-txt{
@@ -106,6 +123,60 @@ body{
 
         }
     }
+
+    .txt-head{
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -1rem;
+            border: 2px solid black;
+            width: 8rem;
+
+        }
+    }
+
+    .about-section{
+        .about-hldr{
+            padding-top: 4rem;
+            .abt-txt{
+                font-size: 1rem;
+                text-align: center;
+                line-height: 1.8rem;
+                margin-bottom: 2rem;
+            }
+
+            .wrk-des{
+                text-align: center;
+                text-transform: uppercase;
+
+            }
+        }
+    }
+
+    .contact-section{
+        input{
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border-radius: 0.8rem;
+            border: 1px solid gray;
+        }
+
+        .sub-imput{
+            height: 10rem;
+            overflow-y: auto;
+            position: relative;
+            &::placeholder{
+                position: absolute;
+                top: 0.5rem;
+            }
+        }
+    }
 }
 
 
@@ -114,14 +185,38 @@ body{
 // Responsive
 
 @media screen and (max-width:767px) {
-
     .wraper{
-        .navbar{
-            .link{
-                display: none;
+        .contact-section{
+            input.name-input{
+                margin-bottom: 1.5rem;
+            }
+        }
+    } 
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    
+    .wraper{
+        .contact-section{
+            input.name-input{
+                margin-bottom: 1.5rem;
             }
         }
     }
-   
+
 }
 
+
+
+
+
+@media screen and  (max-width:1279.98px){
+
+    .wraper{
+        .navbar{
+            display: none;
+        }
+    }
+}
