@@ -118,8 +118,8 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 .wraper .main-content .main-info .sec-txt {
   font-family: "Montserrat-Regular";
-  line-height: 1.5rem;
-  font-size: 2rem;
+  line-height: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
   font-weight: 600;
 }
