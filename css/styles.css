@@ -170,6 +170,31 @@ body ::-webkit-scrollbar-thumb:hover {
   text-align: center;
   text-transform: uppercase;
 }
+.wraper .contact-section .contact-wrap {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.wraper .contact-section .contact-wrap .contact-img {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.wraper .contact-section .contact-wrap .location-txt h4 {
+  font-family: "Montserrat-Regular";
+  margin-bottom: unset;
+  font-weight: 600;
+}
+.wraper .contact-section .contact-wrap .location-txt p {
+  font-family: "Montserrat-Regular";
+  margin-bottom: unset;
+}
 .wraper .contact-section input {
   width: 100%;
   padding: 0.5rem 1rem;
@@ -194,6 +219,24 @@ body ::-webkit-scrollbar-thumb:hover {
   top: 0.5rem;
 }
 
+@media screen and (max-width: 375px) {
+  .wraper .contact-section .contact-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+  .wraper .contact-section .contact-wrap .location-txt {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 479px) {
+  .wraper .contact-section .contact-wrap .location-txt p {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 @media screen and (max-width: 767px) {
   .wraper .contact-section input.name-input {
     margin-bottom: 1.5rem;

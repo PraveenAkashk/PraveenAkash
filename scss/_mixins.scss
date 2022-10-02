@@ -26,6 +26,12 @@
     display: none;
 }
 
+
+@mixin  flex {
+    display: flex;
+    align-items: center;   
+}
+
 // flex center
 @mixin  flex-center {
     display: flex;
