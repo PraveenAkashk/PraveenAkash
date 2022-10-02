@@ -1,5 +1,11 @@
-@import url("../scss/_fonts.scss");
-@import url("../scss/_mixins.scss");
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+}
 .show {
   display: block !important;
 }
@@ -22,8 +28,19 @@ input.form-control:focus {
 body {
   height: 100vh;
   width: 100%;
-  font-family: "Montserrat-regular";
   position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+}
+body ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0.8rem;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .wraper {
@@ -56,15 +73,15 @@ body {
 .wraper .navbar .link {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   z-index: 1024;
 }
 .wraper .navbar .link a {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   border: none;
   height: 3rem;
   width: 3rem;
@@ -93,20 +110,23 @@ body {
   text-align: center;
 }
 .wraper .main-content .main-info .head-txt {
-  font-family: "Montserrat-regular";
+  font-family: "Montserrat-Regular";
+  font-weight: 700;
   margin-bottom: 1.5rem;
   font-size: 3rem;
   text-transform: uppercase;
 }
 .wraper .main-content .main-info .sec-txt {
-  font-family: "Montserrat-regular";
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
   line-height: 1.5rem;
   font-size: 1.6rem;
   margin-bottom: 2rem;
   font-weight: 600;
 }
 .wraper .main-content .main-info .gt-btn {
-  font-family: "Montserrat-regular";
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
   height: 2.5rem;
   padding: 0.4rem 1rem;
   border-radius: 1.2rem;
@@ -157,20 +177,20 @@ body {
   border-radius: 0.8rem;
   border: 1px solid gray;
 }
-.wraper .contact-section .sub-imput {
+.wraper .contact-section .sub-message {
   height: 10rem;
   overflow-y: auto;
   position: relative;
 }
-.wraper .contact-section .sub-imput::-moz-placeholder {
+.wraper .contact-section .sub-message::-moz-placeholder {
   position: absolute;
   top: 0.5rem;
 }
-.wraper .contact-section .sub-imput:-ms-input-placeholder {
+.wraper .contact-section .sub-message:-ms-input-placeholder {
   position: absolute;
   top: 0.5rem;
 }
-.wraper .contact-section .sub-imput::placeholder {
+.wraper .contact-section .sub-message::placeholder {
   position: absolute;
   top: 0.5rem;
 }

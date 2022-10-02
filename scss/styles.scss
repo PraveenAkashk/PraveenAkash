@@ -1,5 +1,6 @@
-@import url("../scss/_fonts.scss");
-@import url("../scss/_mixins.scss");
+@import "../scss/_fonts.scss";
+@import "../scss/_mixins.scss";
+
 
 .show{
     display: block !important;
@@ -26,9 +27,10 @@ input.form-control{
 body{
     height: 100vh;
     width: 100%;
-    font-family: "Montserrat-regular" ;
     position: relative;
-    
+    overflow: hidden;
+    overflow-y: auto;
+    @include scrollthin;
 }
 
 .wraper{
@@ -46,11 +48,11 @@ body{
     }
 
     .menu-icon{
-        display: none;
+            @include displaynone;
     }
 
     .bar-section{
-        display: none;
+            @include displaynone;
     }
   
 
@@ -61,16 +63,11 @@ body{
         display: flex;
         z-index: 1024;
         .link{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+          @include flex-col-center;
             gap: 2rem;
             z-index: 1024;
             a{
-                display: flex;
-                justify-content: center;
-                align-self: center;
+                @include flex-center;
                 border: none;
                 height: 3rem;
                 width: 3rem;
@@ -93,9 +90,7 @@ body{
     .main-content{
         height: 100vh;
         background-color: rgba(182, 142, 142, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         padding: 0 5rem;
         position: relative;
         
@@ -104,14 +99,16 @@ body{
             text-align: center;
 
             .head-txt{
-                font-family: "Montserrat-regular";
+                font-family: "Montserrat-Regular";
+                font-weight: 700;
                 margin-bottom: 1.5rem;
                 font-size: 3rem;
                 text-transform: uppercase;
             }
 
             .sec-txt{
-                font-family: "Montserrat-regular";
+                font-family: "Montserrat-Regular";
+                font-weight: 400;
                 line-height: 1.5rem;
                 font-size: 1.6rem;
                 margin-bottom: 2rem;
@@ -119,7 +116,8 @@ body{
             }
 
             .gt-btn{
-                font-family: "Montserrat-regular";
+                font-family: "Montserrat-Regular";
+                font-weight: 400;
                 height: 2.5rem;
                 padding: 0.4rem 1rem;
                 border-radius: 1.2rem;
@@ -184,7 +182,7 @@ body{
             border: 1px solid gray;
         }
 
-        .sub-imput{
+        .sub-message{
             height: 10rem;
             overflow-y: auto;
             position: relative;
@@ -250,8 +248,7 @@ body{
             display: flex;
 
             img{
-                height: 100%;
-                width: 100%;
+               @include img-size;
             }
            
         }

@@ -14,3 +14,29 @@
         background: #555; 
       }
 }
+
+
+@mixin  img-size {
+        height: 100%;
+        width: 100%;
+}
+
+// diaplay none
+@mixin displaynone {
+    display: none;
+}
+
+// flex center
+@mixin  flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
