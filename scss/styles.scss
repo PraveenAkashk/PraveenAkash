@@ -173,6 +173,32 @@ body{
         }
     }
 
+    .skills-section{
+        .skills-txt{
+            text-align: center
+        }
+
+        .skill-wrap{
+            margin-bottom: 20px;
+            .skill-txt{
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+
+            .progress{
+                border-radius: 10px;
+                
+                .progress-bar{
+                    background-color: black;
+                    border-radius: 10px
+                }
+            }
+
+
+        }
+        
+    }
+
     .contact-section{
 
         .contact-wrap{

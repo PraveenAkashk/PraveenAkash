@@ -170,6 +170,23 @@ body ::-webkit-scrollbar-thumb:hover {
   text-align: center;
   text-transform: uppercase;
 }
+.wraper .skills-section .skills-txt {
+  text-align: center;
+}
+.wraper .skills-section .skill-wrap {
+  margin-bottom: 20px;
+}
+.wraper .skills-section .skill-wrap .skill-txt {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.wraper .skills-section .skill-wrap .progress {
+  border-radius: 10px;
+}
+.wraper .skills-section .skill-wrap .progress .progress-bar {
+  background-color: black;
+  border-radius: 10px;
+}
 .wraper .contact-section .contact-wrap {
   display: flex;
   align-items: center;
