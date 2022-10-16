@@ -157,6 +157,9 @@ body ::-webkit-scrollbar-thumb:hover {
   border-radius: 0.625rem;
   width: 8rem;
 }
+.wraper .about-section {
+  padding-bottom: 20px;
+}
 .wraper .about-section .about-hldr {
   padding-top: 4rem;
 }
@@ -169,6 +172,9 @@ body ::-webkit-scrollbar-thumb:hover {
 .wraper .about-section .about-hldr .wrk-des {
   text-align: center;
   text-transform: uppercase;
+}
+.wraper .skills-section {
+  padding-bottom: 20px;
 }
 .wraper .skills-section .skills-txt {
   text-align: center;
@@ -186,6 +192,9 @@ body ::-webkit-scrollbar-thumb:hover {
 .wraper .skills-section .skill-wrap .progress .progress-bar {
   background-color: black;
   border-radius: 10px;
+}
+.wraper .contact-section {
+  padding-bottom: 20px;
 }
 .wraper .contact-section .contact-section-wrap {
   display: flex;
