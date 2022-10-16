@@ -200,6 +200,11 @@ body{
     }
 
     .contact-section{
+        .contact-section-wrap{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
         .contact-wrap{
             @include flex;
