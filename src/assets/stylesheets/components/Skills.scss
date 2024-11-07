@@ -1,0 +1,20 @@
+.skills-section {
+   padding-bottom: 50px;
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .skills-card{
+        padding: 50px;
+        align-content: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-bottom: 20px;
+
+        img{
+            max-width: 150px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+.site-header{
+    position: sticky !important;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1024;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+    .navbar-brand{
+
+        img{
+            max-width: 80px;
+            width: 100%;
+        }
+    }
+}
