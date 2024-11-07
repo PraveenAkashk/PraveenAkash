@@ -42,7 +42,7 @@ let Aboutsection = () => {
                                             <div className="data-info">
                                                 <div className="data-hldr">Website</div>
                                                 <div className="data-value">
-                                                    <a href="https://praveenakashk.github.io/PraveenAkash/">Praveen Akash K</a>
+                                                    <a href="https://praveenakashk26.netlify.app/">Praveen Akash K</a>
                                                 </div>
                                             </div>
                                             <div className="data-info">

@@ -3,7 +3,7 @@ import Banner from './components/Banner'
 import Aboutsection from './components/About'
 import Skillscomponent from './components/Skillscomponent'
 import './App.scss'
-import Resume from './components/Resume'
+import Professionalinfo from './components/Professionalinfo'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
       <Banner/>
       <Aboutsection/>
       <Skillscomponent/>
-      <Resume/>
+      <Professionalinfo/>
     </>
   )
 }
