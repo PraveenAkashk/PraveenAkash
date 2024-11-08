@@ -9,8 +9,6 @@ let Aboutsection = () => {
     var dob = new Date("07/26/1999")
     let currentYear = new Date()
     let Birthyear = currentYear.getFullYear() - dob.getFullYear();
-    console.log(Birthyear)
-
 
     return (
         <section className="about-section">

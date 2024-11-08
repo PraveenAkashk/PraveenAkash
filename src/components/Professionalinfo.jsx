@@ -38,10 +38,8 @@ let Professionalinfo = () => {
 
                         </div>
                         <ul className="work-list">
-                            <li>Developed responsive, optimized static and corporate websites using HTML, SCSS, JavaScript, and jQuery for Aximsoft, collaborating with design teams for user-friendly interfaces.</li>
-                            <li>Translated design mockups into pixel-perfect, interactive webpages with SCSS and JavaScript animations, employing scalable styling techniques for Finisswim.</li>
-                            <li>Built WordPress websites and dynamic JavaScript components for AutoGrid, providing maintenance to keep sites secure and up-to-date.</li>
-                            <li>Created modular, reusable React components for Rallio, implementing responsive designs and API data fetching for dynamic, accessible applications.</li>
+                            <li>Designed and implemented a responsive, user-centered email template for FSM Global’s corporate events, ensuring a pixel-perfect match to UX specifications and enhancing engagement with a visually appealing, consistent layout across devices and platforms.</li>
+                            <li>Revamped FSM Global's website with a pixel-perfect match to UX designs, ensuring consistency, responsiveness, and an enhanced user experience across all devices and browsers.</li>
                         </ul>
                     </div>
                 </div>
