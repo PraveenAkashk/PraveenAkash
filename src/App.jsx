@@ -2,8 +2,9 @@ import Siteheader from './components/Siteheader'
 import Banner from './components/Banner'
 import Aboutsection from './components/About'
 import Skillscomponent from './components/Skillscomponent'
-import './App.scss'
 import Professionalinfo from './components/Professionalinfo'
+import Projects from "./components/Projects"
+import './App.scss'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Aboutsection/>
       <Skillscomponent/>
       <Professionalinfo/>
+      <Projects/>
     </>
   )
 }

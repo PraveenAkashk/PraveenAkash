@@ -1,3 +1,4 @@
+import { useRef, forwardRef } from 'react';
 import { Container } from "react-bootstrap"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -5,11 +6,9 @@ import AboutImage from "../assets/img/about-image.jpg"
 import "../assets/stylesheets/components/About.scss"
 
 let Aboutsection = () => {
-
     var dob = new Date("07/26/1999")
     let currentYear = new Date()
     let Birthyear = currentYear.getFullYear() - dob.getFullYear();
-
     return (
         <section className="about-section">
             <Container>
@@ -76,6 +75,6 @@ let Aboutsection = () => {
             </Container>
         </section>
     )
-}
+};
 
 export default Aboutsection
