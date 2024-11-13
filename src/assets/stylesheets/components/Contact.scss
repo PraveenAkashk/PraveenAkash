@@ -1,3 +1,5 @@
+@use "../utils/variables.scss" as *;
+
 .contact-main {
     padding-bottom: 50px;
 
@@ -41,16 +43,16 @@
         button {
             display: inline-block;
             border-radius: 20px;
-            background-color: #000;
-            color: #fff;
+            background-color: $dark;
+            color: $Light;
             padding: 10px 20px;
             border: 1px solid;
-            border-color: #000;
+            border-color: $dark;
             transition: 0.5s linear;
 
             &:hover{
                 background: transparent;
-                color: #000;
+                color: $dark;
             }
         }
     }

@@ -1,3 +1,5 @@
+@use "../utils/variables.scss" as *;
+
 .professional-main {
     padding-bottom: 50px;
 
@@ -33,7 +35,7 @@
                 height: 20px;
                 width: 20px;
                 border: 5px solid;
-                background-color: #fff;
+                background-color: $Light; 
             }
 
             .company-head {

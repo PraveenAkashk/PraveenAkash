@@ -1,0 +1,54 @@
+@use "../../utils/variables.scss" as *;
+
+.dark{
+
+    .site-header.navbar-light{
+        background-color: $dark !important;
+        color: $Light;
+
+        .navbar-brand{
+            background-color: $Light;
+        }
+        
+        .theme-btn{
+            background-color: $Light;
+        }
+    }
+
+    .about-section
+    ,.skills-section,
+    .professional-main,
+    .Portfilio-main,
+    .contact-main,
+    .footer-main{
+        background-color: $dark;
+        color: $Light;
+    }
+
+    .skills-section{
+        .skills-card{
+            border: 1px solid $Light;
+        }
+    } 
+
+    .Portfilio-main{
+        .project-card{
+            background-color: $Light;
+        }
+    } 
+
+    .contact-main{
+        .submit-wrap{
+            button{
+                background-color: $Light;
+                color: $dark;
+
+                &:hover{
+                    background-color: $dark;
+                    color: $Light;
+                    border-color: $Light;
+                }
+            }
+        }
+    }  
+}

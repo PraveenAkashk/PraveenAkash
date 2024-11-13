@@ -1,26 +1,19 @@
 import Siteheader from './components/Siteheader'
-import Banner from './components/Banner'
-import Aboutsection from './components/About'
-import Skillscomponent from './components/Skillscomponent'
-import Professionalinfo from './components/Professionalinfo'
-import Projects from "./components/Projects"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
+import { Themecontext, ThemeProvider } from "./context/Themecontext"
 import "./assets/stylesheets/components/Responsive.scss"
 import './App.scss'
+import "./assets/stylesheets/components/theme/Theme.scss"
+import Layout from './components/Layout'
+import { useContext, useState } from 'react'
 
 function App() {
 
   return (
     <>
+    <ThemeProvider>
       <Siteheader/>
-      <Banner/>
-      <Aboutsection/>
-      <Skillscomponent/>
-      <Professionalinfo/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Layout  />
+    </ThemeProvider>
     </>
   )
 }

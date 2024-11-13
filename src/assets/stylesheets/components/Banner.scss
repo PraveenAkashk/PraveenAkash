@@ -1,3 +1,5 @@
+@use "../utils/variables.scss" as *;
+
 .banner-wrap{
     position: relative;
     // margin-top: 74px;
@@ -12,31 +14,31 @@
         h2{
             font-size: 48px;
             line-height: normal;
-            color: #000;
+            color: $dark;
             letter-spacing: 3px;
             text-transform: uppercase;
         }
 
         p{
             font-size: 22px;
-            color: #000;
+            color: $dark;
             line-height: normal;
         }
 
         a{
             display: inline-block;
             border-radius: 20px;
-            background-color: #000;
-            color: #fff;
+            background-color: $dark;
+            color: $Light;
             padding: 10px 20px;
             border: 1px solid;
-            border-color: #000;
+            border-color: $dark;
             transition: 0.5s linear;
             text-decoration: none;
 
             &:hover{
-                background-color: #fff;
-                color: #000;
+                background-color: $Light;
+                color: $dark;
             }
         }
     }

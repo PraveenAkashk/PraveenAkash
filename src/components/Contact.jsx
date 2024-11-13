@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import "../assets/stylesheets/components/Contact.scss";
 import AddressInfo from "../assets/img/address-logo.svg";
 import LocationInfo from "../assets/img/Phone-logo.svg";
 import EmailInfo from "../assets/img/Email-logo.svg";
+import "../assets/stylesheets/components/Contact.scss";
 
 let Contact = () => {
     // State hook for the username
