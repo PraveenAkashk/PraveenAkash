@@ -6,6 +6,7 @@
     top: 0;
     z-index: 1024;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding: 20px 0 !important;
 
     .navbar-brand{
 
@@ -18,5 +19,8 @@
     .theme-btn{
         background-color: transparent;
         border: 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
     }
 }

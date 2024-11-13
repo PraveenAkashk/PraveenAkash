@@ -33,9 +33,25 @@
 
     .Portfilio-main{
         .project-card{
-            background-color: $Light;
+            background: $Light;
+
+            .read-more{
+                background-color: $dark;
+            }
         }
+
+        .project-card{
+            .read-more-head{
+                img{
+                    background-color: $Light;
+                }
+            }
+        }  
+        
+        
     } 
+
+    
 
     .contact-main{
         .submit-wrap{
