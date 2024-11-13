@@ -6,6 +6,7 @@ import Professionalinfo from './components/Professionalinfo'
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import "./assets/stylesheets/components/Responsive.scss"
 import './App.scss'
 
 function App() {

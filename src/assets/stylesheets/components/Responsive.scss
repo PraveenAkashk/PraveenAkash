@@ -1,0 +1,67 @@
+@media (max-width:991.98px) {
+    .container {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    .about-section {
+        .about-info {
+            .image-wrap {
+                max-width: 75%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+
+                img {
+                    height: 450px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .Portfilio-main {
+        .project-card {
+            width: calc(50% - 15px);
+        }
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .professional-main {
+        .professional-wrap {
+            .company-info {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .Portfilio-main{
+        .project-card{
+          img{
+            object-fit: fill;
+          }
+        }
+    } 
+}
+
+
+@media screen and (max-width:574.98px) {
+
+    .Portfilio-main{
+        .project-card{
+          width: 100%;
+        }
+    } 
+
+    .professional-main{
+        .professional-wrap{
+            .company-info{
+                padding-left: 20px;
+
+                .work-list{
+                    padding-left: 15px;
+                }
+            }
+        }
+    }  
+}

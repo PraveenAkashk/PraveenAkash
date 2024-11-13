@@ -19,6 +19,8 @@ let Contact = () => {
     })
     let [Issubmitted,setIssubmitted]=useState(false)
 
+
+
     // Change handler for form fields
     const changeHandler = (event) => {
         if (event.target.name === "Name") {
@@ -70,6 +72,10 @@ let Contact = () => {
         }
 
         if (ISvalid) {
+
+            const service_id="service_203sb71";
+            const template_id="template_7kzl57q";
+            const PublicKey="PZD6zhDxBTeoeH8fr"
 
             let userData = {
                 UserName: userName,
