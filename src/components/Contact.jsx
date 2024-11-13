@@ -120,14 +120,14 @@ let Contact = () => {
                                         <img src={LocationInfo} alt="Location-icon" />
                                         <div>
                                             <h5>Call Us</h5>
-                                            <p>9500691394</p>
+                                            <p><a href="tel:9500691394">9500691394</a></p>
                                         </div>
                                     </li>
                                     <li className="contact-list">
                                         <img src={EmailInfo} alt="Location-icon" />
                                         <div>
                                             <h5>Email</h5>
-                                            <p>Praveenkadhiravan52853@gmail.com</p>
+                                            <p><a href="mailto:Praveenkadhiravan52853@gmail.com">Praveenkadhiravan52853@gmail.com</a></p>
                                         </div>
                                     </li>
                                 </ul>
