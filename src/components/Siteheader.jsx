@@ -27,7 +27,7 @@ let Siteheader = (props) => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <button onClick={toggletheme} className='theme-btn'>
-                            <img src={theme==="light" ? MoonIcon:LightIcon}/>
+                            <img src={theme==="light" ? MoonIcon:LightIcon} alt='theme-cion'/>
                             </button>
                         </Nav>
                     </Navbar.Collapse>
