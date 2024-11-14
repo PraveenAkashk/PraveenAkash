@@ -62,9 +62,6 @@ let Projects = () => {
     let portfoliolist = [aximlogo, Autogridlogo, AutogridFlexsaverlogo, Finislogo, Ralliologo, FSMGloballogo, Secuvylogo]
 
 
-
-    console.log("portfoliolist", portfoliolist)
-
     return (
         <div className="Portfilio-main">
             <Container>
@@ -75,7 +72,7 @@ let Projects = () => {
                             {
                                 portfolioData.map((data, index) => {
                                     return (
-                                        <div className="project-card">
+                                        <div className="project-card" key={index}>
                                             <img src={data.ImagePath} alt={data.AltText} />
                                             <div className="read-more">
                                                 <div className="read-more-head">

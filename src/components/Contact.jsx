@@ -84,7 +84,6 @@ let Contact = () => {
                 UserMessage: userMessage
             }
 
-            console.log("userData", userData);
             setIssubmitted(true);
             setTimeout(() => {
                 setIssubmitted(false); // Hide message after 3 seconds
@@ -98,7 +97,6 @@ let Contact = () => {
 
     };
 
-    console.log("Errordata", Errordata)
 
     return (
         <div className="contact-main">

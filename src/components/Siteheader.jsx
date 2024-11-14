@@ -10,12 +10,9 @@ import "../assets/stylesheets/components/Header.scss";
 
 
 
-let Siteheader = (props) => {
+let Siteheader = () => {
 
     const { theme, toggletheme } = useContext(Themecontext)
-
-    console.log("theme",theme)
-
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary site-header">
