@@ -17,7 +17,7 @@ let Contact = () => {
         UserSubjectErr: "",
         UserMessageErr: ""
     })
-    let [Issubmitted,setIssubmitted]=useState(false)
+    let [Issubmitted, setIssubmitted] = useState(false)
 
 
 
@@ -73,9 +73,9 @@ let Contact = () => {
 
         if (ISvalid) {
 
-            const service_id="service_203sb71";
-            const template_id="template_7kzl57q";
-            const PublicKey="PZD6zhDxBTeoeH8fr"
+            const service_id = "service_203sb71";
+            const template_id = "template_7kzl57q";
+            const PublicKey = "PZD6zhDxBTeoeH8fr"
 
             let userData = {
                 UserName: userName,
@@ -166,7 +166,7 @@ let Contact = () => {
                                             name="subject"
                                             value={userSubject}
                                             onChange={changeHandler} />
-                                            {Errordata.UserSubjectErr.length > 0 ? <div className="error">{Errordata.UserSubjectErr}</div> : null}
+                                        {Errordata.UserSubjectErr.length > 0 ? <div className="error">{Errordata.UserSubjectErr}</div> : null}
                                     </div>
                                     <div className="form-group">
                                         <label>Message*</label>
@@ -174,7 +174,7 @@ let Contact = () => {
                                             name="message"
                                             value={userMessage}
                                             onChange={changeHandler} ></textarea>
-                                             {Errordata.UserMessageErr.length > 0 ? <div className="error">{Errordata.UserMessageErr}</div> : null}
+                                        {Errordata.UserMessageErr.length > 0 ? <div className="error">{Errordata.UserMessageErr}</div> : null}
                                     </div>
                                     <div className="submit-wrap">
                                         <Button type="submit">Submit</Button>
